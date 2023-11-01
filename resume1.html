@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="hlogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UJJINAPPA GADDAM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/8875973cf4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    
+
+
+}
+/* -------------------------------------------------------------------------------------Home ending  */
+.nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.nav:hover{
+    box-shadow: 2px 2px 3px;
+    
+}
+.nav img{
+    margin-top: 50px;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+
+}
+.nav img:hover{
+    box-shadow: 2px 2px 2px 2px;
+}
+.nav .nav_items{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.nav .nav_items:hover a{
+    filter: blur(3px);
+}
+.nav .nav_items a:hover {
+    filter: blur(0px);
+}
+.nav .nav_items a{
+    position: relative;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
+.nav .nav_items a::before{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height:3px;
+    left: -0px;
+    overflow: hidden;
+    top: 45px;
+    transition: 0.7s;
+
+}
+.nav .nav_items a:hover::before{
+    width: 100%;
+    border-radius: 30px;
+}
+.nav .nav_items a:hover{
+    color: wheat;
+   
+}
+/* side nav end */
+
+/* home div starting */
+.main .div_home{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAE5D3;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.name{
+    width: 50%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+
+    /* background-color: red; */
+}
+#s_intro{
+    font-size: 15px;
+    line-height: 30px;
+    position: relative;
+    animation: pp 2s  linear;
+
+    top: 50px;
+    left: 15%;
+}
+
+#s_intro:hover{
+    color: #f8340d;
+}
+
+
+.main .div_home .name h1{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-position:0px 0px;
+    animation: pp 2s linear;
+
+    /* animation: TT 4s linear infinite ; */
+
+}
+@keyframes pp {
+    0%{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translatex(-50px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+
+    }
+    
+}
+
+.main .div_home .name h1:hover{
+    cursor: pointer;
+
+    -webkit-text-stroke: 2px;
+    background-image: linear-gradient(#f8340d,#f8340d);
+
+
+}
+
+#pavan{
+    width: 400px;
+    height: 500px;
+    animation: ppp 2s linear;
+   
+
+}
+
+@keyframes ppp {
+    0%{
+        opacity: 0;
+        transform: translatex(100px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translatex(50px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+
+    }
+    
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------Home ending */
+/* --------------------------------------------------------------------------------Qual starting */
+.qual{
+    width: 83.5%;
+    height: 100vh;
+    background-color: aqua;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+}
+ #h1{
+   
+    margin-top: -40px;
+    font-family:sans-serif;
+    position: relative;
+   
+   
+
+}
+/* ************ */
+ #h1:hover{
+    cursor: pointer;
+}
+
+#h1::before{
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    height:4px;
+    left: -0px;
+    overflow: hidden;
+    top: 45px;
+    transition: 0.7s;
+
+}
+ #h1::after{
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    height:4px;
+    right: 0;
+    overflow: hidden;
+    top:-6px;
+    transition: 0.7s;
+
+}
+#h1:hover::before,#h1:hover::after{
+    width: 100%;
+}
+/* ********** */
+.Q_all{
+    width: 100%;
+    height: 400px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Q_all .Q{
+    width: 390px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    transition: all 1s;
+}
+
+/* .Q_all .BE:hover{
+    box-shadow: 2px 2px 2px blue,-2px -2px 2px blue;
+    cursor: pointer;
+    
+}
+.Q_all .INTER:hover{
+    box-shadow: 2px 2px 2px RED,-2px -2px 2px RED  ;
+    cursor: pointer;
+    
+}
+.Q_all .SSC:hover{
+    box-shadow: 2px 2px 2px black,  -2px -2px 2px black;
+    cursor: pointer;
+    
+} */
+.Q_all .Q ul li{
+    font-size: 30px;
+}
+/* .Q_all .Q ul li:hover,h3:hover{
+    color: orange;
+
+} */
+.Q_all .Q:hover{
+    border-radius: 20PX;
+
+    border: none;
+    color: black;
+    background-color: #F7DC6F 
+    ;
+    transform: translateY(-15px);
+}
+.Q_all .Q h3,li{
+    margin-left: 10px;
+}
+.Q_all .Q ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------- Qual ending */
+
+
+/* --------------------------------------------------------------------------------Skills starting */
+
+.skills{
+    width: 83.5%;
+    height: 100vh;
+    background-color: palevioletred;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+}
+.skills .S_all{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.S{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.S a{
+    text-decoration: none;
+    color: orange;
+}
+.s_logo{
+    width: 150px;
+    height:150px;
+    margin-top: 20px;
+    backdrop-filter:blur(2px);
+    box-shadow: 1px 2px 2px  black;
+    transition: all 1s;
+
+    border-radius: 50%;
+}
+.s_logo:hover{
+    transform: scale(1.2);
+    /* transform: translateY(-15px); */
+    /* box-shadow:3px 3px 2px black; */
+
+}
+
+
+
+
+/* --------------------------------------------------------------------------------Skills ending */
+.project{
+    width: 83.5%;
+    height: 130vh;
+    background-color: #ECF0F1;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.HH1{
+    position: relative;
+    top: 80px;
+}
+.p{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+
+}
+p{
+    font-size: large;
+    padding-left: 20px;
+}
+.NAC{
+    position: relative;
+    top: 80px;
+    /* background-color: #42d2ff; */
+}
+/* .AC{
+    
+    background-color: #F5B041;
+} */
+.pro{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* float: left; */
+
+}
+h4{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+    /* background-color: red; */
+
+
+}
+/* h4:hover{
+
+} */
+.pro_na{
+    background-color: orange;
+    border-radius: 30px;
+
+}
+.pro_na h5{
+    font-size: 20px;
+}
+.pro_ac a{
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: large;
+    color: black;
+    transition: all 0.4s linear;
+    background-color: orange;
+}
+.pro_ac a:hover{
+    border-radius: 30px;
+    transform: scale(1.2);
+
+}
+
+
+marquee{
+    position: relative;
+    font-size: large;
+    top: 38px;
+    padding-top: 10px;
+    height: 50px;
+    /* background-color: rgb(0, 255, 98); */
+}
+.im{
+    width: 200px;
+    height: 200px;
+    /* border-radius: 30%; */
+    overflow: hidden;
+}
+.pphoto{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+.pphoto:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------Info starting */
+.info{
+    width: 83.5%;
+    height: 100vh;
+    background-color: #F2F3F4 ;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.pd{
+    width: 100%;
+    height: 400px;
+   
+}
+
+.pd th{
+    width: 170px;
+    text-align: left;
+    font-size: 20px;
+}
+.pd td{
+    text-align: left;
+    font-size: 20px;
+
+}
+.pd td:hover,.pd th:hover{
+    color: orange;
+    cursor: pointer;
+}
+/* --------------------------------------------------------------------------------info ending */
+
+.conact{
+    width: 83.5%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.9;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.conact a{
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    padding-top: 5px;
+    border-radius: 30%;
+    box-shadow: 0px 5px 15px -5px coral;
+    overflow: hidden;
+    background-color:white ;
+    position: relative;
+}
+.conact a::before{
+content: "";
+position: absolute;
+width: 120%;
+height: 120%;
+background-image: linear-gradient(#42d2ff,#F5B041 );
+transform: rotate(45deg);
+left: -110;
+top: 120%;
+
+}
+.conact a i{
+    position: relative;
+    z-index: 4;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+
+}
+.conact a:hover i{
+    color: rgb(241, 110, 10);
+    transform: scale(1.3);
+}
+.conact a:hover::before{
+    animation: icon 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+@keyframes icon {
+    0%{
+        left: -110%;
+        top: 120%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+    
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- child-1 -->
+        <!-- Navigation Bar Started -->
+        <aside class="nav">
+            <img src=""C:\Users\ujjin\Downloads\WhatsApp Image 2023-05-30 at 6.56.26 PM (1).jpeg"" alt="">
+            <div class="nav_items">
+                <a href="#div_home">Home</a>
+                <a href="#qual">Qualification</a>
+                <a href="#skills">Skills</a>
+                <a href="#proj">Project</a>
+                <a href="#info">Info</a>
+                <a href="#con">Conact Us</a>
+
+            </div>
+        </aside>
+        <!-- Navigation Bar Ended -->
+        <!-- Home page starting -->
+        <div class="div_home" id="div_home">
+            <div class="name">
+                <h1>ujjinappagaddam</h1>
+                <p id="s_intro">My name is ujjinappa i Born and rise In koppalakonda which is small village in AP .now I am Currently <br>pursuing my final year  in the stream of ELECTRONIC AND COMMUNICATION ENGINEERING  at <br> G.PULLAIAH COLLEGE OF ENGINEERING in KURNOOL
+                coming to my skills I have learn  <br>python ,SQL, HTML, CSS, and i now some bases of JavaScript.
+                    </p>
+            </div>
+            <div id="ujjinappa">
+                <img src=""C:\Users\ujjin\Downloads\WhatsApp Image 2023-05-30 at 6.56.26 PM (1).jpeg"" alt="" id="ujjinappa">
+            </div>
+
+
+        </div>
+        <!-- Home page end -->
+    </div>
+    <!-- Qualification starting -->
+    <div class="qual" id="qual">
+        <h1 id="h1">Qualifications</h1>
+        <div class="Q_all">
+            <div class="BE Q">
+                <ul>
+                    <h3>G.PULLAIAH COLLEGE OF ENGINEERING AND TECNOLOGY</h3>
+                    <li>ECE</li>
+                    <li>GPA-8.21</li>
+                </ul>
+            </div>
+            <div class="INTER Q">
+                <ul>
+                    <h3>NARYANA JR COLLEGE</h3>
+                    <li>Intermediate</li>
+                    <li>CGPA-8.65</li>
+                </ul>
+            </div>
+            <div class="SSC Q">
+                <ul>
+                    <h3>RAVINDRA BHARATHI SCHOOL</h3>
+                    <li>SSC</li>
+                    <li>CGPA-8.23</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Qualification Ending -->
+
+    <!-- skill starting -->
+    <div class="skills" id="skills">
+        <h1 id="h1">Skills</h1>
+        <div class="S_all">
+            <div class="B_END S">
+                <h1 id="h1">Backend Skills</h1>
+
+                <a href="/code/py.html" target="_blank"><img src="py.jpg" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+                <a href="" target="_blank"><img src="dj.png" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+                <a href="/code/Oracle_sql.html" target="_blank"><img src="oracle.webp" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+
+            </div>
+
+            <div class="F_END S">
+                <h1 id="h1">Frontend Skills</h1>
+                <a href="/code/html.html" target="_blank"><img src="html1.webp" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+                <a href="/code/css.html" target="_blank"><img src="css1.png" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+                <a href="" target="_blank"><img src="js.png" alt="" class="s_logo" data-aos="fade-out" data-aos-duration="1000"></a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <!-- skill Ending -->
+    <!-- Project starting -->
+    <div class="project" id="proj">
+        <h1 class="HH1" id="h1">Projects</h1>
+        <div class="p NAC">
+            <h4>ACADEMIC PROJECT</h4>
+            <div class="pro_na pro"  data-aos="fade-left" data-aos-duration="1000">
+
+                <h5>SECURING SYSTEM ON A CHIP WITH FPGA AGAINST ROWHAMMER ATTACKS</h5>
+                <p>Rowhammer attacks are a type of security vulnerability that can affect computer systems, including Systems on Chip (SoCs) implemented on FPGAs (Field-Programmable Gate Arrays). These attacks exploit the physical properties of memory cells to cause bit flips in adjacent cells, leading to unauthorized access or modification of data. Securing an SoC against Rowhammer attacks involves a combination of hardware and software techniques. Here are some strategies to consider:</p>
+                <div class="im">
+                    <img src="C:\Users\ujjin\Downloads\VLSI.jpg"alt="" class="pphoto">
+                </div>
+
+            </div>
+        </div>
+        <!-- <i class="fa-solid fa-hand-back-point-down fa-bounce"></i> -->
+        <!-- <i class="fa-solid fa-hand-back-point-down"></i> -->
+        <marquee behavior="alternate" direction=""><span><i
+                    class="fa-solid fa-hand-back-point-down fa-bounce"></i></span>Click On Text To visite websites
+        </marquee>
+        <div class="p AC">
+            <h4>NON-ACADEMIC PROJECT</h4>
+            <div class="pro_ac pro">
+                <a href="/code/All_projects/Task of html/forestproject.html" class="ap" target="_self"  data-aos="fade-left" data-aos-duration="1000">Forest Website
+                    By Using Only
+                    <abbr title="HYPER TEXT MARKUP LANGUAGE">HTML</abbr> </a>
+                <a href="/code/All_projects/pizza task/pizza.html" class="ap" target="_self"  data-aos="fade-right" data-aos-duration="1000">Pizza Desgining By Using
+                    Only <abbr title="CASCADING STYLE SHEET">CSS</abbr></a>
+                <a href="/code/All_projects/Car_task/car_task.html" class="ap" target="_self"  data-aos="fade-left" data-aos-duration="1000">Car Shape Desgining With
+                    Animation</a>
+                <a href="/code/All_projects/Game_site/code/index.html" class="ap" target="_self" data-aos="fade-left" data-aos-duration="1000">Gameing Website</a>
+                <a href="/code/All_projects/Restaurant/codes/index.html" class="ap"  data-aos="fade-rigth" data-aos-duration="1000">Restaurant</a>
+                <a href="/code/All_projects/OrganicShop/index.html" class="ap"  data-aos="fade-left" data-aos-duration="1000">Oeganic shop</a>
+            </div>-
+        </div>
+
+    </div>
+    <!-- project ending -->
+
+    <!-- Info starting -->
+    <div class="info" id="info">
+        <h1 id="h1">Parsional Details</h1>
+        <div class="pd">
+
+
+            <table cellspacing="25" cellpadding="">
+                <tr>
+                    <th>NAME</th>
+                    <td>GADDAM UJJINAPPA</td>
+                </tr>
+                <tr>
+                    <th>FATHER NAME</th>
+                    <td>GADDAM RAMESH</td>
+                </tr>
+                <tr>
+                    <th>MOTHER NAME</th>
+                    <td>GADDAM SUVARNAMMa</td>
+                </tr>
+                <tr>
+                    <th>DOB</th>
+                    <td>11-05-2001</td>
+                </tr>
+                <tr>
+                    <th>GENDER</th>
+                    <td>MALE</td>
+                </tr>
+                <tr>
+                    <th>ADDRESS</th>
+                    <td>1-63-A, STREET NO-1 KOPPALAKONDA ,KOPPALAKONDA POST, garladinne MANDAL, ANANTHAPUR
+                        DIST,ANDHRA PRADESH-515774.</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <!-- Info ending -->
+    <!-- conact Us starting -->
+    <div class="conact" id="con">
+        <a href="https:api.whatsapp.com/send?phone=9963794729"><i class="fa-brands fa-whatsapp "></i></a>
+        <a href="https://instagram.com/ujjinappa_gaddam?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram "></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100014066807693&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f "></i></a>
+        <a href="https://www.linkedin.com/in/ujjinappa_gaddam?igshid"><i class="fa-brands fa-linkedin "></i></a>
+        <a href="tel:9963794729"><i class="fa-solid fa-phone "></i></a>
+        <a href="mailto:ujjinappagaddam@gmail.com"><i class="fa-solid fa-envelope "></i></a>
+
+
+
+    </div>
+    <!-- Conact Us ending -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+
+
+</body>
+
+</html>
